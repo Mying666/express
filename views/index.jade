@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title!=title
+    body
+        div.test#id
+            p!=title
+            p=title
+            p title
+            p!=link.href
+            a(href=link.name)=link.name
+        div.a title
+        div= 'If you think you can' + ', <b>you can</b>.'
+        div!= 'If you think you can' + ', <b>you can</b>.'
+        div(style={color: 'red'}) Style
+
+        div
+            a(href='https://www.baidu.com') 百度一下
+            | If you think you can, you can.
